@@ -1,0 +1,37 @@
+{
+  "name": "shopify-order-webhook",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Webtask serverless function to post customers to HubSpot whenever orders are created in Shopify.",
+  "main": "index.js",
+  "scripts": {
+    "create": "node scripts/create",
+    "open:editor": "https://webtask.io/make",
+    "update": "npm run create",
+    "watch": "node scripts/create --watch"
+  },
+  "keywords": [
+    "webtask",
+    "shopify",
+    "hubspot"
+  ],
+  "author": {
+    "name": "Austin Gordon",
+    "email": "gordon.austin2@gmail.com",
+    "url": "https://github.com/AustinLeeGordon"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@webtask/middleware-compiler": "^1.5.2",
+    "express": "^4.16.2",
+    "isomorphic-fetch": "^2.2.1",
+    "raw-body": "^2.3.3",
+    "webtask-tools": "^3.4.0"
+  },
+  "devDependencies": {
+    "execa": "^4.0.0",
+    "open-cli": "^5.0.0",
+    "wt-cli": "^11.0.2",
+    "yargs-parser": "^16.1.0"
+  }
+}
